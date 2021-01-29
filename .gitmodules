@@ -1,0 +1,3 @@
+[submodule "bigspring-hugo-startup-theme"]
+	path = bigspring-hugo-startup-theme
+	url = https://github.com/themefisher/bigspring-hugo-startup-theme.git

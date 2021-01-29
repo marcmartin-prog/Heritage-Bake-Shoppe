@@ -1,0 +1,104 @@
+:root {
+  --primary: #262a2f;
+  --secondary: #19d3da;
+  --tertiary: #ffffff;
+  --quaternary: #f2f4f5;
+  --quinary: ;
+}
+
+a {
+  text-decoration: none;
+}
+
+body{
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 52px;
+  color: var(--tertiary);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  background-color:var(--primary);
+  justify-content: space-around;
+  margin: 0;
+}
+
+p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  color: var(--tertiary);
+}
+
+
+.hero {
+  background-color: var(--primary);
+  margin: 0;
+}
+
+.logo {
+  margin: 20px;
+}
+
+.main-btn{
+  color: var(--primary);
+  background-color: var(--tertiary);
+  border-radius: 8px;
+  font-family: 'Rubik', sans-serif;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.menu > ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: var(--tertiary);
+  font-family: 'Rubik', sans-serif;
+  padding: 15px 20px;
+}
+
+.menu > ul {
+  display: flex;
+
+}
+
+.menu-item {
+  color: var(--tertiary);
+  font-family: 'Rubik', sans-serif;
+  padding: 15px 20px;
+}
+
+.mobile-menu{
+  background-color: var(--primary);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 100px;
+  display: none;
+  z-index: 10;
+}
+
+.mobile-menu>ul{
+  list-style-type: none;
+  margin-top: 25vh;
+}
+.mobile-menu>ul>li{
+  margin: 25px ;
+  font-size: 14px;
+}
+
+.m-menu{
+  text-decoration: none;
+  margin: 48px auto;
+  width: 230px;
+  font-size: 24px;
+}
