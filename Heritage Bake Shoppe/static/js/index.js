@@ -1,3 +1,5 @@
+//'esversion:6'
+
 /*mobile menu code*/
 
 var hamburger = document.getElementById("hamburger");
@@ -36,3 +38,42 @@ for (var i = 0; i < menuItem.length; i++) {
 	});
 
 }
+
+//slider code
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function goToDiv(n) {
+    showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("review");
+    var y = document.getElementsByClassName('js-dot');
+    if (n > x.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = x.length; }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+        y[i].classList.remove('active');
+    }
+    x[slideIndex - 1].style.display = "flex";
+    y[slideIndex - 1].classList.add('active');
+}
+
+function generateDots() {
+    var i;
+    var x = document.getElementsByClassName("review");
+    for (i = 0; i < x.length; i++) {
+        var dotNumber = i + 1;
+        var dot = document.createElement('span');
+        dot.innerHTML =
+            '<button class="js-dot" onclick="goToDiv(' + dotNumber + ')">' + dotNumber + '</button>';
+
+        document.getElementById('js-slider-dots').appendChild(dot);
+
+    }
+}
+generateDots();
