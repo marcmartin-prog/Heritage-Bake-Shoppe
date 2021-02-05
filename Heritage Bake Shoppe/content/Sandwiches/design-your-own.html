@@ -1,0 +1,48 @@
+---
+title: "Design-Your-Own"
+date: 2021-02-04T15:32:13-06:00
+draft: false
+---
+
+<section class="prod-hero">
+  <div class="prod-accent"></div>
+  <h1>Design Your Own Sandwich</h1>
+  <div class="p-accent"></div>
+  <ul class="breadcrumb">
+    <li><a href="/">HOME > </a></li>
+    <li><a href="/products/"> ... > </a></li>
+      <li><a href="/sandwiches/">SANDWICHES > </a></li>
+    <li class="current">{{<param "title" >}}</li>
+  </ul>
+</section>
+
+<!-- Sandwich Product page section -->
+<section>
+  <div class="product-image">
+    <img src="/images/Design-sandwich.jpg" alt="create your own sandwich">
+    <p>Go for your own favorite custom taste with a sandwich made especially for you! Grab your favorite meal by choosing your bread, meats, cheeses, and add-ons.</p>
+  </div>
+  <div class="product-options">
+    <select class="" id="bread" name="bread">
+      <option value="select-bread" disabled selected hidden>CHOOSE YOUR BREAD</option>
+      <option value="White">White</option>
+      <option value="Wheat">Wheat</option>
+      <option value="Sourdough">Sourdough</option>
+      <option value="Italian Parmesan">Italian Parmesan</option>
+    </select>
+    <select class="" id="meat" name="meat">
+      <option value="select-meat" disabled selected hidden>CHOOSE YOUR MEAT</option>
+      <option value="Roast Beef">Roast Beef</option>
+      <option value="Black Forest Ham">Black Forest Ham</option>
+      <option value="Carving Ham">Carving Ham</option>
+      <option value="Turkey Breast">Turkey Breast</option>
+      <option value="Cajun Turkey">Cajun Turkey</option>
+      <option value="Sweet Lebanon Balogna">Sweet Lebanon Balogna</option>
+      <option value="Balogna">Balogna</option>
+    </select>
+    <div class="checkbox">
+      <label for="Double Meat">ADD ANOTHER MEAT?</label>
+      <input class="checked" type="checkbox" name="Double Meat" value="ADD ANOTHER MEAT?">
+    </div>
+  </div>
+</section>
