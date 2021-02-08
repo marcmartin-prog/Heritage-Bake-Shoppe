@@ -77,3 +77,23 @@ function generateDots() {
     }
 }
 generateDots();
+
+
+//snipcart product customization code
+const button = document.querySelector('#add-to-cart');
+const bread = document.querySelector('#bread');
+const meat = document.querySelector('#meat');
+const cheese = document.querySelector('#cheese');
+
+
+function breadChoice(){
+  button.setAttribute("data-item-custom1-value", bread.value);
+}
+
+function meatChoice(){
+  button.setAttribute("data-item-custom2-value", meat.value);
+}
+
+function cheeseChoice(){
+  button.setAttribute("data-item-custom3-value", cheese.value);
+}

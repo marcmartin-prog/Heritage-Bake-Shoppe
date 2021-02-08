@@ -10,7 +10,6 @@ draft: false
   <div class="p-accent"></div>
   <ul class="breadcrumb">
     <li><a href="/">HOME > </a></li>
-    <li><a href="/products/"> ... > </a></li>
       <li><a href="/sandwiches/">SANDWICHES > </a></li>
     <li class="current">{{<param "title" >}}</li>
   </ul>
@@ -23,14 +22,14 @@ draft: false
     <p>Go for your own favorite custom taste with a sandwich made especially for you! Grab your favorite meal by choosing your bread, meats, cheeses, and add-ons.</p>
   </div>
   <div class="product-options">
-    <select class="" id="bread" name="bread">
+    <select class="" id="bread" name="bread" onchange="breadChoice(this.value)">
       <option value="select-bread" disabled selected hidden>CHOOSE YOUR BREAD</option>
       <option value="White">White</option>
       <option value="Wheat">Wheat</option>
       <option value="Sourdough">Sourdough</option>
       <option value="Italian Parmesan">Italian Parmesan</option>
     </select>
-    <select class="" id="meat" name="meat">
+    <select class="" id="meat" name="meat" onchange="meatChoice(this.value)">
       <option value="select-meat" disabled selected hidden>CHOOSE YOUR MEAT</option>
       <option value="Roast Beef">Roast Beef</option>
       <option value="Black Forest Ham">Black Forest Ham</option>
@@ -44,5 +43,36 @@ draft: false
       <label for="Double Meat">ADD ANOTHER MEAT?</label>
       <input class="checked" type="checkbox" name="Double Meat" value="ADD ANOTHER MEAT?">
     </div>
+    <select class="" id="cheese" name="cheese" onchange="cheeseChoice(this.value)">
+      <option value="select-cheese" disabled selected hidden>CHOOSE YOUR CHEESE</option>
+      <option value="Colby">Colby</option>
+      <option value="Pepper Jack">Pepper Jack</option>
+      <option value="Muenster">Muenster</option>
+      <option value="Cheddar">Cheddar</option>
+      <option value="Cojack">Cojack (Marble)</option>
+      <option value="Swiss">Swiss</option>
+      <option value="American">American</option>
+    </select>
+    <div class="checkbox">
+      <label for="Double Cheese">ADD ANOTHER CHEESE?</label>
+      <input class="checked" type="checkbox" name="Double Cheese" value="ADD ANOTHER CHEESE?">
+    </div>
   </div>
+  <button type="button" name="add-to-cart" class="btn-main snipcart-add-item" id="add-to-cart"
+  data-item-id="Design-Your-Own"
+  data-item-price="8.99"
+  data-item-url="/sandwiches/design-your-own"
+  data-item-description="Get your own favorite taste by ordering a custom sandwich"
+  data-item-image="/images/Design-sandwich.jpg"
+  data-item-name="My Custom Sandwich"
+  data-item-custom1-name="Bread"
+  data-item-custom1-option="White | Wheat | Sourdough | Italian Parmesan"
+  data-item-custom1-value="White"
+  data-item-custom2-name="Meat"
+  data-item-custom2-option="Roast Beef | Black Forest Ham | Carving Ham | Turkey Breast | Cajun Turkey | Sweet Lebanon Balogna |Balogna"
+  data-item-custom2-value="Roast Beef"
+  data-item-custom3-name="Cheese"
+  data-item-custom3-option="Colby | PepperJack | Muenster | Cheddar | Cojack (Marble) | Swiss | American"
+  data-item-custom3-value="Colby"
+  >ADD TO CART</button>
 </section>
