@@ -97,13 +97,14 @@ input {
   padding: 20px 20px 10px 0;
 }
 
-input[type=checkbox]:checked {
-content: "\2713";
-text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-font-size: 15px;
-color: #eb3e3e;
-text-align: center;
-line-height: 15px;
+input[type='checkbox']:checked:after {
+  content: '✔';
+  color: white;
+  background-color: #eb3e3e;
+  padding: 3px 5px;
+  position: absolute;
+  top: -2px;
+  left: -2px;
 }
 
 input[type=text], input[type=button] {
@@ -185,6 +186,19 @@ textarea:focus, textarea:focus, select:focus{
 
 ul {
   list-style-type: none;
+}
+
+#d-meat{
+  display: none;
+}
+#t-meat{
+  display: none;
+}
+#d-cheese{
+  display: none;
+}
+#t-cheese{
+  display: none;
 }
 
 .active{
@@ -295,13 +309,24 @@ ul {
 }
 
 .checkbox input{
-  margin-right: 8px;
-  position: relative;
-  top: -2px;
-  height: 16px;
-  width: 16px;
-  border-radius: 4px;
+  width: 14px !important;
+height: 14px !important;
+-webkit-appearance: none;
+-moz-appearance: none;
+-o-appearance: none;
+appearance: none;
+outline: solid 1px #640d14;
+box-shadow: none;
+font-size: 12px;
+text-align: center;
+background: white;
+padding: 8px;
+border-radius: 4px;
+position: relative;
+margin: 0 10px 25px 5px;
 }
+
+
 
 
 .cta{
@@ -640,7 +665,11 @@ ul {
 .snipcart-items-count{
   position: absolute;
   top: 15px;
-  right: 30px;
+  right: 15px;
+  padding: 1px 4px;
+  border-radius: 50%;
+  background-color: lightgray;
+  opacity: 0.5;
 }
 
 .reviews{

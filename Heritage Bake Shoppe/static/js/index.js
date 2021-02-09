@@ -83,6 +83,8 @@ generateDots();
 const button = document.querySelector('#add-to-cart');
 const bread = document.querySelector('#bread');
 const meat = document.querySelector('#meat');
+const doubleMeat = document.querySelector('#d-meat');
+const tripleMeat = document.querySelector('#t-meat');
 const cheese = document.querySelector('#cheese');
 
 
@@ -94,6 +96,54 @@ function meatChoice(){
   button.setAttribute("data-item-custom2-value", meat.value);
 }
 
+function doubleMeatChoice(){
+  button.setAttribute("data-item-custom3-value", meat.value);
+}
+
+function tripleMeatChoice(){
+  button.setAttribute("data-item-custom4-value", meat.value);
+}
+
 function cheeseChoice(){
-  button.setAttribute("data-item-custom3-value", cheese.value);
+  button.setAttribute("data-item-custom5-value", cheese.value);
+}
+
+function doubleCheeseChoice(){
+  button.setAttribute("data-item-custom6-value", cheese.value);
+}
+
+function tripleCheeseChoice(){
+  button.setAttribute("data-item-custom7-value", cheese.value);
+}
+
+function dMeat(){
+   if(document.querySelector('#double-meat').checked){
+    document.querySelector('#d-meat').style.display ="inline-block";
+   }else{
+    document.querySelector('#d-meat').style.display = "none";
+  }
+}
+
+function tMeat(){
+   if(document.querySelector('#triple-meat').checked){
+    document.querySelector('#t-meat').style.display ="inline-block";
+   }else{
+    document.querySelector('#t-meat').style.display = "none";
+  }
+}
+
+function dCheese(){
+   if(document.querySelector('#double-cheese').checked){
+    document.querySelector('#d-cheese').style.display ="inline-block";
+   }else{
+    document.querySelector('#d-cheese').style.display = "none";
+  }
+}
+
+function tCheese(){
+   if(document.querySelector('#triple-cheese').checked){
+    document.querySelector('#t-cheese').style.display ="inline-block";
+   }else{
+    document.querySelector('#t-cheese').style.display = "none";
+  }
 }
