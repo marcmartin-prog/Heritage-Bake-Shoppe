@@ -81,7 +81,7 @@ draft: false
     </select>
     <div class="checkbox">
       <label for="Double Cheese">ADD ANOTHER CHEESE?</label>
-      <input class="checked" type="checkbox" name="Double Cheese" value="ADD DOUBLE CHEESE?" onchange="dCheese(this)">
+      <input class="checked" type="checkbox" name="Double Cheese" id="double-cheese" value="ADD DOUBLE CHEESE?" onchange="dCheese(this)">
     </div>
     <select class="" id="d-cheese" name="-double-cheese" onchange="doubleCheeseChoice(this.value)">
       <option value="select-cheese" disabled selected hidden>CHOOSE YOUR SECOND CHEESE</option>
@@ -96,7 +96,7 @@ draft: false
     </select>
     <div class="checkbox">
       <label for="Triple Cheese">ADD TRIPLE CHEESE?</label>
-      <input class="checked" type="checkbox" name="Triple Cheese" value="ADD TRIPLE CHEESE?" onchange="tCheese(this)">
+      <input class="checked" type="checkbox" name="Triple Cheese" id="triple-cheese" value="ADD TRIPLE CHEESE?" onchange="tCheese(this)">
     </div>
     <select class="" id="t-cheese" name="triple cheese" onchange="tripleCheeseChoice(this.value)">
       <option value="select-cheese" disabled selected hidden>CHOOSE YOUR THIRD CHEESE</option>
@@ -132,10 +132,10 @@ draft: false
   data-item-custom5-name="Cheese"
   data-item-custom5-options="Colby | PepperJack | Muenster | Cheddar | Cojack (Marble) | Swiss | American"
   data-item-custom5-value="Colby"
-  data-item-custom6-name="Cheese"
+  data-item-custom6-name="Double Cheese"
   data-item-custom6-options="None | Colby[+1.00] | PepperJack[+1.00] | Muenster[+1.00] | Cheddar[+1.00] | Cojack (Marble)[+1.00] | Swiss[+1.00] | American[+1.00]"
   data-item-custom6-value="None"
-  data-item-custom7-name="Cheese"
+  data-item-custom7-name="Triple Cheese"
   data-item-custom7-options="None | Colby[+1.00] | PepperJack[+1.00] | Muenster[+1.00] | Cheddar[+1.00] | Cojack (Marble)[+1.00] | Swiss[+1.00] | American[+1.00]"
   data-item-custom7-value="None"
   >ADD TO CART</button>

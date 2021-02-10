@@ -86,6 +86,8 @@ const meat = document.querySelector('#meat');
 const doubleMeat = document.querySelector('#d-meat');
 const tripleMeat = document.querySelector('#t-meat');
 const cheese = document.querySelector('#cheese');
+const doubleCheese = document.querySelector('#d-cheese');
+const tripleCheese = document.querySelector('#t-cheese');
 
 
 function breadChoice(){
@@ -97,11 +99,11 @@ function meatChoice(){
 }
 
 function doubleMeatChoice(){
-  button.setAttribute("data-item-custom3-value", meat.value);
+  button.setAttribute("data-item-custom3-value", doubleMeat.value);
 }
 
 function tripleMeatChoice(){
-  button.setAttribute("data-item-custom4-value", meat.value);
+  button.setAttribute("data-item-custom4-value", tripleMeat.value);
 }
 
 function cheeseChoice(){
@@ -109,11 +111,11 @@ function cheeseChoice(){
 }
 
 function doubleCheeseChoice(){
-  button.setAttribute("data-item-custom6-value", cheese.value);
+  button.setAttribute("data-item-custom6-value", doubleCheese.value);
 }
 
 function tripleCheeseChoice(){
-  button.setAttribute("data-item-custom7-value", cheese.value);
+  button.setAttribute("data-item-custom7-value", tripleCheese.value);
 }
 
 function dMeat(){
