@@ -205,6 +205,10 @@ ul {
   opacity: 1 !important;
 }
 
+.bold{
+  font-weight: 600;
+}
+
 .breadcrumb{
   display: flex;
   padding-inline-start: 0;
@@ -418,6 +422,11 @@ margin: 0 10px 25px 5px;
   width: 100%;
 }
 
+.ingredients{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .js-dot{
   height: 12px;
   width: 12px;
@@ -482,9 +491,19 @@ margin: 0 10px 25px 5px;
   color: var(--primary);
   background-color: var(--tertiary);
   border-radius: 8px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   padding: 15px 20px;
   text-decoration: none;
+}
+
+.meats, .cheeses{
+  display: flex;
+  flex-direction: column;
+}
+
+.meatsandcheese{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .menu > ul {
@@ -496,7 +515,7 @@ margin: 0 10px 25px 5px;
 .menu-item {
   text-decoration: none;
   color: var(--tertiary);
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   padding: 15px 20px;
 }
 
@@ -507,7 +526,7 @@ margin: 0 10px 25px 5px;
 
 .menu-item {
   color: var(--tertiary);
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   padding: 15px 20px;
 }
 
@@ -597,6 +616,17 @@ margin: 0 10px 25px 5px;
   margin-left: 16px;
 }
 
+.p-page-hr{
+  margin: 16px 0 25px;
+}
+
+.price{
+  margin-top: 5px;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
 .products{
   padding: 40px 15px;
 }
@@ -607,6 +637,15 @@ margin: 0 10px 25px 5px;
   background-color: #e8d2ae;
   position: relative;
   left: -15px
+}
+
+.prod-button{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.prod-button .btn-main{
+  width: 160px;
+  margin: 0 0 84px;
 }
 
 .prod-cat{

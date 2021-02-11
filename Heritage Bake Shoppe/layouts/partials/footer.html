@@ -31,14 +31,3 @@
 <script async src="https://cdn.snipcart.com/themes/v3.0.29/default/snipcart.js"></script>
 <div hidden id="snipcart" data-api-key="MjNlNjJmMGQtMDI4ZC00NTkxLWEwMzEtMjQxODczZDZkOGRlNjM3NDMyNDE2NTE2MTY4NzY4" data-config-modal-style="side"></div>
 <script type="text/javascript" src="/js/index.js"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>

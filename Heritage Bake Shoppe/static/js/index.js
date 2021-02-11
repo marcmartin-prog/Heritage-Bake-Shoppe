@@ -1,4 +1,4 @@
-//'esversion:6'
+//jshint esversion: 6
 
 /*mobile menu code*/
 
@@ -88,6 +88,12 @@ const tripleMeat = document.querySelector('#t-meat');
 const cheese = document.querySelector('#cheese');
 const doubleCheese = document.querySelector('#d-cheese');
 const tripleCheese = document.querySelector('#t-cheese');
+let price = document.querySelector('#price').innerText;
+var updPrice = parseFloat(price);
+var updatedPrice = updPrice;
+
+
+
 
 
 function breadChoice(){
@@ -121,31 +127,70 @@ function tripleCheeseChoice(){
 function dMeat(){
    if(document.querySelector('#double-meat').checked){
     document.querySelector('#d-meat').style.display ="inline-block";
+    priceAdd();
    }else{
     document.querySelector('#d-meat').style.display = "none";
+    priceMinus();
   }
 }
 
 function tMeat(){
    if(document.querySelector('#triple-meat').checked){
     document.querySelector('#t-meat').style.display ="inline-block";
+    priceAdd();
    }else{
     document.querySelector('#t-meat').style.display = "none";
+    priceMinus();
   }
 }
 
 function dCheese(){
    if(document.querySelector('#double-cheese').checked){
     document.querySelector('#d-cheese').style.display ="inline-block";
+    priceAdd();
    }else{
     document.querySelector('#d-cheese').style.display = "none";
+    priceMinus();
   }
 }
 
 function tCheese(){
    if(document.querySelector('#triple-cheese').checked){
     document.querySelector('#t-cheese').style.display ="inline-block";
+    priceAdd();
    }else{
     document.querySelector('#t-cheese').style.display = "none";
+    priceMinus();
   }
+}
+
+function lettuce(){
+  if(document.querySelector('#lettuce').checked){
+    document.querySelector('#lettuce').setAttribute('checked', true);
+  } else{
+    document.querySelector('#lettuce').setAttibute();
+  }
+}
+
+function priceAdd(){
+  updatedPrice = updatedPrice + 1.00;
+  document.querySelector('#price').innerText = updatedPrice;
+}
+
+function priceMinus(){
+  updatedPrice = updatedPrice - 1.00;
+  document.querySelector('#price').innerText = updatedPrice;
+}
+
+function meal(){
+  if(document.querySelector('#meal').checked){
+    updatedPrice = updatedPrice + 1.98;
+    let num = updatedPrice.toFixed(2);
+    document.querySelector('#price').innerText = num;
+  }
+ else{
+  updatedPrice = updatedPrice - 1.98;
+  let num = updatedPrice.toFixed(2);
+  document.querySelector('#price').innerText = num;
+}
 }
