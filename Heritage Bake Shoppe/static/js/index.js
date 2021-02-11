@@ -81,21 +81,21 @@ generateDots();
 
 //snipcart product customization code
 const button = document.querySelector('#add-to-cart');
-const bread = document.querySelector('#bread');
-const meat = document.querySelector('#meat');
-const doubleMeat = document.querySelector('#d-meat');
-const tripleMeat = document.querySelector('#t-meat');
-const cheese = document.querySelector('#cheese');
-const doubleCheese = document.querySelector('#d-cheese');
-const tripleCheese = document.querySelector('#t-cheese');
+let bread = document.querySelector('#bread');
+let meat = document.querySelector('#meat');
+let doubleMeat = document.querySelector('#d-meat');
+let tripleMeat = document.querySelector('#t-meat');
+let cheese = document.querySelector('#cheese');
+let doubleCheese = document.querySelector('#d-cheese');
+let tripleCheese = document.querySelector('#t-cheese');
 let price = document.querySelector('#price').innerText;
 var updPrice = parseFloat(price);
 var updatedPrice = updPrice;
-const tray = document.querySelector('#tray-size')
 
 
 
 
+//double bread and meat choice
 
 function breadChoice(){
   button.setAttribute("data-item-custom1-value", bread.value);
@@ -124,6 +124,9 @@ function doubleCheeseChoice(){
 function tripleCheeseChoice(){
   button.setAttribute("data-item-custom7-value", tripleCheese.value);
 }
+
+
+//dynamically changes the price on the product page
 
 function dMeat(){
    if(document.querySelector('#double-meat').checked){
@@ -196,6 +199,25 @@ function meal(){
 }
 }
 
+
+
 function traySize(){
-  button.setAttribute("data-item-custom5-value", tray.value);
+  let tray = document.querySelector('#tray-size');
+  button.setAttribute("data-item-custom1-value", tray.value);
+  if(tray.value.includes("Medium", 0)){
+    document.querySelector('#tray-price').innerText = "34.99";
+  } else if(tray.value.includes("Large", 0)){
+    document.querySelector('#tray-price').innerText = "49.99";
+  }
+}
+
+
+//horizontal scrolling for review Section
+
+function moveLeft(){
+  document.getElementById('review-parent').scrollLeft -=700;
+}
+
+function moveRight(){
+  document.getElementById('review-parent').scrollRight -=700;
 }
