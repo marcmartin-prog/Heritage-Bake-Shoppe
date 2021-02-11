@@ -91,6 +91,7 @@ const tripleCheese = document.querySelector('#t-cheese');
 let price = document.querySelector('#price').innerText;
 var updPrice = parseFloat(price);
 var updatedPrice = updPrice;
+const tray = document.querySelector('#tray-size')
 
 
 
@@ -193,4 +194,8 @@ function meal(){
   let num = updatedPrice.toFixed(2);
   document.querySelector('#price').innerText = num;
 }
+}
+
+function traySize(){
+  button.setAttribute("data-item-custom5-value", tray.value);
 }
