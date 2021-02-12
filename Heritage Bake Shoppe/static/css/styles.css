@@ -306,6 +306,10 @@ ul {
   width: 32px;
 }
 
+.cart-word{
+  display: none;
+}
+
 .checkbox{
   display: flex;
   flex-direction: row-reverse;
@@ -621,6 +625,15 @@ margin: 0 10px 25px 5px;
   margin-left: 16px;
 }
 
+.p-cat-text a{
+  display: flex;
+}
+.p-cat-text img{
+  height: 10px;
+  width: 10px;
+  margin: 30px 5px 0;
+}
+
 .p-page-hr{
   margin: 16px 0 25px;
 }
@@ -828,9 +841,7 @@ margin: 0 10px 25px 5px;
     grid-column-gap: 16px;
   }
 
-  .cart-word{
-    display: none;
-  }
+
 
   .contact-us{
     max-width: 33vw;
@@ -891,7 +902,7 @@ margin: 0 10px 25px 5px;
   }
 
   .review{
-    min-width: 350px;
+    min-width: 450px;
     height: 240px;
   }
 
@@ -906,10 +917,37 @@ margin: 0 10px 25px 5px;
 @media only screen and (min-width: 1025px){
 
 
+footer{
+  padding: 40px;
+}
+
+footer h4{
+  margin-top: 0;
+}
+
+footer .logo{
+  left: 0;
+}
+footer>div>.logo>img{
+  height: 80px;
+}
+
 h1{
   font-size: 60px;
   margin-block-start: 0;
   margin-block-end:20px;
+}
+
+h2{
+  font-size: 50px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+h4{
+  font-size: 20px;
 }
 
  nav{
@@ -944,14 +982,34 @@ h1{
     color: #0c1b33 !important;
   }
 
+  .cta{
+    max-height: 500px;
+    padding: 40px;
+  }
+
+  .cta-text{
+    margin-top: 70px;
+  }
+
+  .footer-link{
+    margin: 10px 0 40px;
+  }
+
   .hamburger{
     display: none;
+  }
+
+  .heading-accent{
+    width: 54px;
+    height:70px;
+    left: 195px;
   }
 
   .hero{
     top: -100px;
     display: flex;
     padding-bottom: 0;
+    margin-bottom: -100px;
   }
 
   .hero-accent{
@@ -973,9 +1031,14 @@ h1{
 
   .hero-text{
     max-width: 500px;
+    max-height: 500px;
     position: relative;
     top: 240px;
     left: 150px;
+  }
+
+  .img-section{
+    z-index: 3;
   }
 
   .logo{
@@ -998,6 +1061,14 @@ h1{
 
   .menu-item{
     color: white;
+  }
+
+  .products{
+    padding: 40px;
+  }
+
+  .reviews{
+    padding: 60px 40px;
   }
 
   .snipcart-items-count{
