@@ -513,6 +513,11 @@ margin: 0 10px 25px 5px;
   grid-template-columns: 1fr 1fr;
 }
 
+.meatsandcheese p{
+  margin-block-start: 0;
+  margin-block-end: 20px;
+}
+
 .menu > ul {
   display: flex;
   flex-direction: row;
@@ -576,9 +581,15 @@ margin: 0 10px 25px 5px;
   margin: 2px 0 0 10px !important;
 }
 
-.options{
+.options div{
   overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
+.options div::-webkit-scrollbar {
+  display: none;
+}
+
 
 .options>div{
   display: inline-block;
@@ -801,6 +812,10 @@ margin: 0 10px 25px 5px;
   width: 160px;
 }
 
+.s-line{
+  display: none;
+}
+
 .slider-buttons{
   display: none;
 }
@@ -860,16 +875,49 @@ margin: 0 10px 25px 5px;
 
   }
   .prod-image>div{
-    width: 30vw;
+    width: 33vw;
     height: 100%;
     top: 30px;
   }
   .prod-image>img{
     width: 100%;
-    margin: 40% 0;
+    top: 20%;
     position: relative;
-    right: 10px;
+    right: 25px;
+    margin: 0;
   }
+
+
+  .sandw-do{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0;
+  }
+  .sandw-do>img{
+    grid-column-start: 2;
+  }
+  .sandw-do>div{
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  .sandwiches{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+    min-height: 310px;
+  }
+
+  .sandwiches h2{
+    margin-block-start: 0;
+    margin-block-end: 15px;
+  }
+
+  .sandwiches img{
+    max-width: 400px;
+    margin-top: 20px;
+  }
+
 
 }
 
@@ -993,13 +1041,21 @@ margin: 0 10px 25px 5px;
     height: 2px;
     background-color: var(--secondary);
     position: absolute;
-    left: 160px;
-    top: 65px;
+    left: 24vw;
+    top: 70px;
     opacity: 0.3;
   }
 
+  .p-page{
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    grid-column-gap: 80px;
+    max-width: 1100px;
+    margin: auto;
+  }
+
   .prod-cat{
-    max-height: 380px;
+    max-height: 440px;
 
   }
 
@@ -1010,7 +1066,12 @@ margin: 0 10px 25px 5px;
 
   .prod-image>img{
     right: 35px;
-    margin-top: 30%;
+    top: 35px;
+  }
+
+  .product-image{
+    position: relative;
+    top: 40px;
   }
 
   .product-items{
@@ -1028,6 +1089,37 @@ margin: 0 10px 25px 5px;
   .slider-buttons{
     display: flex;
 
+  }
+
+  .sandw-do{
+    margin: 60px 0;
+  }
+
+
+  .sandwiches{
+    grid-template-columns: 0.9fr 1.1fr;
+    grid-column-gap: 105px;
+    min-height: 380px;
+  }
+
+  .sandwiches img{
+    max-width: 400px;
+    margin-top: 20px;
+  }
+
+  .sandwiches>div{
+    position: relative;
+  }
+
+  .s-line{
+    display: inline;
+    width: 65px;
+    height: 2px;
+    background-color: var(--secondary);
+    position: absolute;
+    left: -85px;
+    top: 30px;
+    opacity: 0.3;
   }
 
 
@@ -1174,7 +1266,11 @@ h4{
   }
 
   .menu-item{
-    color: white;
+    color: var(--secondary);
+  }
+
+  .prod-hero{
+    margin-top: 60px;
   }
 
   .products{

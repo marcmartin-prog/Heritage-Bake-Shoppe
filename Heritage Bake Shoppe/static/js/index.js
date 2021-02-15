@@ -125,6 +125,152 @@ function tripleCheeseChoice(){
   button.setAttribute("data-item-custom7-value", tripleCheese.value);
 }
 
+function lettuce(){
+  const checked = document.querySelector('#lettuce').checked;
+  button.dataset["itemCustom2Value"] = checked ? "true" : "false";
+}
+
+function tomato(){
+  const checked = document.querySelector('#tomato').checked;
+  button.dataset["itemCustom3Value"] = checked ? "true" : "false";
+}
+
+function dillPickle(){
+  const checked = document.querySelector('#dill-pickle').checked;
+  button.dataset["itemCustom4Value"] = checked ? "true" : "false";
+}
+
+function onion(){
+  const checked = document.querySelector('#onion').checked;
+  button.dataset["itemCustom5Value"] = checked ? "true" : "false";
+}
+
+function bananaPepper(){
+  const checked = document.querySelector('#banana-pepper').checked;
+  button.dataset["itemCustom6Value"] = checked ? "true" : "false";
+}
+
+function jalapeno(){
+  const checked = document.querySelector('#jalapeno').checked;
+  button.dataset["itemCustom7Value"] = checked ? "true" : "false";
+}
+
+function mayo(){
+  const checked = document.querySelector('#mayo').checked;
+  button.dataset["itemCustom8Value"] = checked ? "true" : "false";
+}
+
+function mustard(){
+  const checked = document.querySelector('#mustard').checked;
+  button.dataset["itemCustom9Value"] = checked ? "true" : "false";
+}
+
+function ranch(){
+  const checked = document.querySelector('#ranch').checked;
+  button.dataset["itemCustom10Value"] = checked ? "true" : "false";
+}
+
+function honeyMustard(){
+  const checked = document.querySelector('#honey-mustard').checked;
+  button.dataset["itemCustom11Value"] = checked ? "true" : "false";
+}
+
+function italian(){
+  const checked = document.querySelector('#italian').checked;
+  button.dataset["itemCustom12Value"] = checked ? "true" : "false";
+}
+
+function salt(){
+  const checked = document.querySelector('#salt').checked;
+  button.dataset["itemCustom13Value"] = checked ? "true" : "false";
+}
+
+function pepper(){
+  const checked = document.querySelector('#pepper').checked;
+  button.dataset["itemCustom14Value"] = checked ? "true" : "false";
+}
+
+
+function lettuceDO(){
+  const checked = document.querySelector('#lettuce').checked;
+  button.dataset["itemCustom8Value"] = checked ? "true" : "false";
+}
+
+function tomatoDO(){
+  const checked = document.querySelector('#tomato').checked;
+  button.dataset["itemCustom9Value"] = checked ? "true" : "false";
+}
+
+function dillPickleDO(){
+  const checked = document.querySelector('#dill-pickle').checked;
+  button.dataset["itemCustom10Value"] = checked ? "true" : "false";
+}
+
+function onionDO(){
+  const checked = document.querySelector('#onion').checked;
+  button.dataset["itemCustom11Value"] = checked ? "true" : "false";
+}
+
+function bananaPepperDO(){
+  const checked = document.querySelector('#banana-pepper').checked;
+  button.dataset["itemCustom12Value"] = checked ? "true" : "false";
+}
+
+function jalapenoDO(){
+  const checked = document.querySelector('#jalapeno').checked;
+  button.dataset["itemCustom13Value"] = checked ? "true" : "false";
+}
+
+function mayoDO(){
+  const checked = document.querySelector('#mayo').checked;
+  button.dataset["itemCustom14Value"] = checked ? "true" : "false";
+}
+
+function mustardDO(){
+  const checked = document.querySelector('#mustard').checked;
+  button.dataset["itemCustom15Value"] = checked ? "true" : "false";
+}
+
+function ranchDO(){
+  const checked = document.querySelector('#ranch').checked;
+  button.dataset["itemCustom16Value"] = checked ? "true" : "false";
+}
+
+function honeyMustardDO(){
+  const checked = document.querySelector('#honey-mustard').checked;
+  button.dataset["itemCustom17Value"] = checked ? "true" : "false";
+}
+
+function italianDO(){
+  const checked = document.querySelector('#italian').checked;
+  button.dataset["itemCustom18Value"] = checked ? "true" : "false";
+}
+
+function saltDO(){
+  const checked = document.querySelector('#salt').checked;
+  button.dataset["itemCustom19Value"] = checked ? "true" : "false";
+}
+
+function pepperDO(){
+  const checked = document.querySelector('#pepper').checked;
+  button.dataset["itemCustom20Value"] = checked ? "true" : "false";
+}
+
+function mealDO(){
+  const checked = document.querySelector('#meal').checked;
+  button.dataset["itemCustom22Value"] = checked ? "true" : "false";
+  if(document.querySelector('#meal').checked){
+    updatedPrice = updatedPrice + 1.98;
+    let num = updatedPrice.toFixed(2);
+    document.querySelector('#price').innerText = num;
+  }
+ else{
+  updatedPrice = updatedPrice - 1.98;
+  let num = updatedPrice.toFixed(2);
+  document.querySelector('#price').innerText = num;
+}
+}
+
 
 //dynamically changes the price on the product page
 
@@ -168,13 +314,7 @@ function tCheese(){
   }
 }
 
-function lettuce(){
-  if(document.querySelector('#lettuce').checked){
-    document.querySelector('#lettuce').setAttribute('checked', true);
-  } else{
-    document.querySelector('#lettuce').setAttibute();
-  }
-}
+
 
 function priceAdd(){
   updatedPrice = updatedPrice + 1.00;
@@ -187,6 +327,8 @@ function priceMinus(){
 }
 
 function meal(){
+  const checked = document.querySelector('#meal').checked;
+  button.dataset["itemCustom16Value"] = checked ? "true" : "false";
   if(document.querySelector('#meal').checked){
     updatedPrice = updatedPrice + 1.98;
     let num = updatedPrice.toFixed(2);
@@ -215,9 +357,9 @@ function traySize(){
 //horizontal scrolling for review Section
 
 function moveLeft(){
-  document.getElementById('review-parent').scrollLeft -=700;
+  document.getElementById('review-parent').scrollLeft -=1000;
 }
 
 function moveRight(){
-  document.getElementById('review-parent').scrollRight -=700;
+  document.getElementById('review-parent').scrollRight -=1000;
 }
