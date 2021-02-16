@@ -872,15 +872,15 @@ margin: 0 10px 25px 5px;
   .prod-cat{
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
-
+    grid-column-gap: 30px;
   }
   .prod-image>div{
-    width: 33vw;
+    width: 32vw;
     height: 100%;
     top: 30px;
   }
   .prod-image>img{
-    width: 100%;
+    width: 90%;
     top: 20%;
     position: relative;
     right: 25px;
@@ -1041,7 +1041,7 @@ margin: 0 10px 25px 5px;
     height: 2px;
     background-color: var(--secondary);
     position: absolute;
-    left: 24vw;
+    left: 23vw;
     top: 70px;
     opacity: 0.3;
   }
@@ -1065,8 +1065,8 @@ margin: 0 10px 25px 5px;
   }
 
   .prod-image>img{
-    right: 35px;
-    top: 35px;
+    right: 25px;
+    top: 75px;
   }
 
   .product-image{
@@ -1269,8 +1269,58 @@ h4{
     color: var(--secondary);
   }
 
+  .p-accent{
+    width: 54px;
+    height:74px;
+    left: 350px;
+    top: 130px;
+  }
+
+  .p-cat-line{
+    width: 75px;
+    left: -200px;
+    top: 90px;
+  }
+
+  .p-page{
+    grid-column-gap: 120px;
+    max-width: 1200px;
+  }
+
+  .prod-cat{
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 60px;
+    height: 640px;
+    max-height: 740px;
+  }
+
+  .prod-cat>div:nth-child(2){
+    position: relative;
+    top: 85px;
+  }
+
+
+  .prod-cat>div>h2{
+    right: 110px;
+  }
+
+
+  .prod-image>div{
+    width: 400px;
+  }
+
+  .prod-image>img{
+    top: 180px;
+  }
+
   .prod-hero{
     margin-top: 60px;
+  }
+
+  .prod-accent{
+    width: 80px;
+    height: 120px;
   }
 
   .products{
@@ -1284,6 +1334,11 @@ h4{
   .snipcart-items-count{
     top:40px;
     right: 35px;
+  }
+
+
+  .sandwiches img{
+    max-width: 500px;
   }
 }
 
@@ -1346,6 +1401,12 @@ h4{
     left: -30px;
   }
 
+  .prod-hero>h1, .prod-hero>.breadcrumb, .prod-hero>.options{
+    position: relative;
+    top: -50px;
+    left: 120px;
+  }
+
   .product-items{
     grid-column-gap: 30px;
   }
@@ -1362,6 +1423,11 @@ h4{
   .reviews{
     padding: 40px 200px;
   }
+
+  .sandw-do, .sandwiches{
+    padding: 60px 120px;
+  }
+
 }
 
 @media only screen and (min-width: 1440px){
@@ -1416,6 +1482,13 @@ h4{
 
   .logo{
     left: 5vw;
+  }
+
+  .p-accent{
+    left: 450px;
+    width: 64px;
+    height: 84px;
+    top: 85px;
   }
 
   .p-cat-image>img{
