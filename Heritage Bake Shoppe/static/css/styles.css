@@ -82,6 +82,10 @@ header {
   height: 88px;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 hr{
   width: 100%;
   background-color: var(--secondary);
@@ -111,6 +115,11 @@ input[type='checkbox']:checked:after {
 input[type=text], input[type=button] {
 -webkit-appearance: none;
 -webkit-border-radius: 0;
+}
+
+input[type=number] {
+  width: 45px;
+  padding-right: 5px;
 }
 
 input:focus, textarea:focus, select:focus{
@@ -200,6 +209,10 @@ ul {
 }
 #t-cheese{
   display: none;
+}
+
+.about>img{
+  width: 100%;
 }
 
 .active{
@@ -581,6 +594,17 @@ margin: 0 10px 25px 5px;
   margin: 2px 0 0 10px !important;
 }
 
+.profiles{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px 10px;
+}
+
+.prof>img{
+  height: 104px;
+  width: 104px;
+}
+
 .options div{
   overflow: auto;
   -ms-overflow-style: none;
@@ -669,6 +693,12 @@ margin: 0 10px 25px 5px;
   font-size: 32px;
   font-weight: 600;
   font-family: 'Space Grotesk', sans-serif;
+}
+
+.price>p{
+  font-size: 12px;
+  position: relative;
+  top: -12px;
 }
 
 .products{
@@ -1080,6 +1110,10 @@ margin: 0 10px 25px 5px;
     grid-column-gap: 10px;
   }
 
+  .profiles{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .review{
     min-width: 450px;
     max-width: 500px;
@@ -1176,6 +1210,17 @@ h4{
   nav>ul{
     display: flex;
       margin-top: 52px;
+  }
+
+  .about, .profiles{
+    padding: 20px 120px 60px;
+  }
+
+  .about-text{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 65px;
+    margin-top: 65px;
   }
 
   .btn-main, .btn-tan{
@@ -1327,6 +1372,10 @@ h4{
     padding: 40px;
   }
 
+  .profiles{
+    grid-template-columns: 140px 140px 140px 140px 140px;
+  }
+
   .reviews{
     padding: 60px 40px;
   }
@@ -1348,6 +1397,14 @@ h4{
   nav>ul{
     position: relative;
     left: 65px;
+  }
+
+  .about, .profiles{
+    padding: 20px 220px 60px;
+  }
+
+  .footer{
+    padding: 40px 120px;
   }
 
   .cart-parent{
@@ -1404,7 +1461,8 @@ h4{
   .prod-hero>h1, .prod-hero>.breadcrumb, .prod-hero>.options{
     position: relative;
     top: -50px;
-    left: 120px;
+    max-width: 1400px;
+    margin: 0 auto 25px;
   }
 
   .product-items{
@@ -1424,8 +1482,17 @@ h4{
     padding: 40px 200px;
   }
 
+  .s-line{
+    left: -18%;
+    width: 85px;
+    height: 3px;
+  }
+
   .sandw-do, .sandwiches{
-    padding: 60px 120px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 0;
+    grid-column-gap: 130px;
   }
 
 }
@@ -1443,6 +1510,10 @@ h4{
 
   h3{
     font-size: 40px;
+  }
+
+  .about, .profiles{
+    padding: 20px 320px 60px;
   }
 
   .cart-parent{
@@ -1488,7 +1559,7 @@ h4{
     left: 450px;
     width: 64px;
     height: 84px;
-    top: 85px;
+    top: 65px;
   }
 
   .p-cat-image>img{
@@ -1507,6 +1578,5 @@ h4{
   .products{
     padding: 60px 170px;
   }
-
 
 }

@@ -272,6 +272,18 @@ function mealDO(){
 }
 
 
+//baked goods customizations
+let count = document.querySelector('#quantity')
+
+ function quantity(){
+     button.setAttribute("data-item-quantity", count.value);
+ }
+
+ function bakedChoice(){
+   button.setAttribute("data-item-custom1-value", bread.value);
+ }
+
+
 //dynamically changes the price on the product page
 
 function dMeat(){
