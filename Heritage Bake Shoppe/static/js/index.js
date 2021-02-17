@@ -257,14 +257,14 @@ function pepperDO(){
 }
 
 function mealDO(){
-  const checked = document.querySelector('#meal').checked;
-  button.dataset["itemCustom22Value"] = checked ? "true" : "false";
   if(document.querySelector('#meal').checked){
+    button.setAttribute("data-item-custom22-value", "Yes");
     updatedPrice = updatedPrice + 1.98;
     let num = updatedPrice.toFixed(2);
     document.querySelector('#price').innerText = num;
   }
  else{
+  button.setAttribute("data-item-custom22-value", "No");
   updatedPrice = updatedPrice - 1.98;
   let num = updatedPrice.toFixed(2);
   document.querySelector('#price').innerText = num;
@@ -273,7 +273,7 @@ function mealDO(){
 
 
 //baked goods customizations
-let count = document.querySelector('#quantity')
+let count = document.querySelector('#quantity');
 
  function quantity(){
      button.setAttribute("data-item-quantity", count.value);
@@ -339,14 +339,14 @@ function priceMinus(){
 }
 
 function meal(){
-  const checked = document.querySelector('#meal').checked;
-  button.dataset["itemCustom16Value"] = checked ? "true" : "false";
   if(document.querySelector('#meal').checked){
+    button.setAttribute("data-item-custom22-value", "Yes");
     updatedPrice = updatedPrice + 1.98;
     let num = updatedPrice.toFixed(2);
     document.querySelector('#price').innerText = num;
   }
  else{
+  button.setAttribute("data-item-custom22-value", "No");
   updatedPrice = updatedPrice - 1.98;
   let num = updatedPrice.toFixed(2);
   document.querySelector('#price').innerText = num;
