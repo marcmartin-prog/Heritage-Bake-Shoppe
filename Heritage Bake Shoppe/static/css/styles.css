@@ -210,6 +210,63 @@ ul {
 #t-cheese{
   display: none;
 }
+.snipcart__font--secondary, .snipcart__font--subtitle{
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.snipcart-cart-button{
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 12px;
+      padding: 15px ;
+      background-color: var(--quaternary);
+      border-radius: 60px;
+      color: white;
+      margin: 32px 0 10px;
+      display: flex;
+      justify-content: center;
+      width: 230px;
+      transition: 0.3s;
+      border: none;
+  }
+.snipcart-cart-button:hover{
+    background-color: var(--tertiary);
+  }
+
+  .snipcart-cart-button--highlight{
+    background-image: none;
+  }
+
+.snipcart-cart__secondary-header{
+  background-color: var(--primary);
+}
+
+.snipcart__actions--link, .snipcart-signin__register-link, .snipcart-signin__forgot-password, .snipcart-order__invoice-number--highlight{
+  color: var(--quaternary);
+}
+
+.snipcart-modal__container, .snipcart-modal{
+  background-color: white;
+}
+
+.snipcart-cart-header{
+  background-color: rgb(232, 210, 174, 0.1);
+}
+
+.snipcart__box--gray, .snipcart-cart-summary{
+  background-color: rgb(232, 210, 174, 0.1);
+}
+
+.snipcart__icon--blue-dark path {
+  fill: white;
+}
+.snipcart__icon--blue-light path {
+  fill: var(--quaternary);
+}
+
+
+.snipcart__box--badge-highlight, .snipcart__box--badge {
+  background: var(--quaternary);
+}
 
 .about>img{
   width: 100%;
@@ -289,6 +346,9 @@ ul {
     width: 235px;
     transition: 0.3s;
 }
+.btn-white:hover{
+  opacity:0.5;
+}
 
 .btn-footer{
     font-family: 'Space Grotesk', sans-serif;
@@ -304,6 +364,11 @@ ul {
     justify-content: center;
     width: 235px;
     transition: 0.3s;
+}
+
+.btn-footer:hover{
+  background-color: var(--quaternary);
+  color: white;
 }
 
 .bullet{
@@ -380,6 +445,9 @@ margin: 0 10px 25px 5px;
   margin: 10px 0;
   color: var(--quaternary);
   font-weight: 600;
+}
+.footer-link:hover{
+  opacity: 0.5;
 }
 
 .heading{
