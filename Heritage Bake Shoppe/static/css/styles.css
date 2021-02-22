@@ -662,6 +662,19 @@ margin: 0 10px 25px 5px;
   margin: 2px 0 0 10px !important;
 }
 
+.privacy{
+  position: sticky;
+  bottom: 0;
+  max-width: 350px;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #640D14;
+  display: none;
+}
+
+
 .profiles{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -876,7 +889,7 @@ margin: 0 10px 25px 5px;
   display: flex;
   min-width: 93vw;
   scroll-snap-align: start;
-  height: 245px;
+  height: 260px;
   margin-right: 35px;
 }
 
@@ -1295,6 +1308,10 @@ h4{
     max-width: 145px;
   }
 
+  .contact-us{
+    max-width: 485px;
+  }
+
   .cart{
     height: 20px;
     margin: 48px 40px 0 0;
@@ -1471,7 +1488,7 @@ h4{
     padding: 20px 220px 60px;
   }
 
-  .footer{
+  footer{
     padding: 40px 120px;
   }
 
@@ -1526,6 +1543,10 @@ h4{
     left: -30px;
   }
 
+  .p-page{
+    grid-template-columns: 1fr 1fr;
+  }
+
   .prod-hero>h1, .prod-hero>.breadcrumb, .prod-hero>.options{
     position: relative;
     top: -50px;
@@ -1535,6 +1556,10 @@ h4{
 
   .product-items{
     grid-column-gap: 30px;
+  }
+
+  .product-image>img{
+    max-height: 448px;
   }
 
   .products{
@@ -1567,6 +1592,10 @@ h4{
 
 @media only screen and (min-width: 1440px){
 
+
+  footer{
+    padding: 40px 220px;
+  }
 
   h1{
     font-size: 72px;

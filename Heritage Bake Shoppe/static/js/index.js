@@ -1,5 +1,20 @@
 //jshint esversion: 6
 
+
+//code for privacy policy notice
+
+setTimeout(function(){
+  document.querySelector('#privacy').style.display="block";
+}, 5000);
+
+setTimeout(function(){
+  document.querySelector('#privacy').style.display="none";
+}, 10000);
+
+function accept(){
+  document.querySelector('#privacy').style.display = "none";
+}
+
 /*mobile menu code*/
 
 var hamburger = document.getElementById("hamburger");
