@@ -1,21 +1,27 @@
 //jshint esversion: 6
 
+function privacyPolicy () {
+ if (localStorage.getItem("hasCodeRunBefore") === null) {
+     document.querySelector('#privacy').style.display="block";
+     localStorage.setItem("hasCodeRunBefore", true);
+ }
+}
 
-//code for privacy policy notice
-
-setTimeout(function(){
-  document.querySelector('#privacy').style.display="block";
-}, 5000);
-
-setTimeout(function(){
-  document.querySelector('#privacy').style.display="none";
-}, 10000);
 
 function accept(){
   document.querySelector('#privacy').style.display = "none";
 }
 
+privacyPolicy();
+
+
+
+
 /*mobile menu code*/
+
+function noScroll(){
+  window.scrollTo(0, 0);
+}
 
 var hamburger = document.getElementById("hamburger");
 var mobileMenu = document.getElementById("mobile-menu");
@@ -29,11 +35,13 @@ hamburger.addEventListener("click", function(){
       line1.classList.remove('line1clicked');
       line2.classList.remove('line2clicked');
       line3.classList.remove('line3clicked');
+      window.removeEventListener('scroll', noScroll);
     } else{
       mobileMenu.style.display = "block";
       line1.classList.add('line1clicked');
       line2.classList.add('line2clicked');
       line3.classList.add('line3clicked');
+      window.addEventListener('scroll', noScroll);
     }
 });
 
@@ -47,6 +55,7 @@ for (var i = 0; i < menuItem.length; i++) {
       line1.classList.remove("line1clicked");
       line2.classList.remove("line2clicked");
       line3.classList.remove("line3clicked");
+      window.removeEventListener('scroll', noScroll);
 		} else {
 			mobileMenu.style.display = "block";
 		}
@@ -96,6 +105,7 @@ generateDots();
 
 //snipcart product customization code
 const button = document.querySelector('#add-to-cart');
+let cakes = document.querySelector('#cakes');
 let bread = document.querySelector('#bread');
 let meat = document.querySelector('#meat');
 let doubleMeat = document.querySelector('#d-meat');
@@ -294,8 +304,51 @@ let count = document.querySelector('#quantity');
      button.setAttribute("data-item-quantity", count.value);
  }
 
+ function loafChoice(){
+   button.setAttribute("data-item-custom1-value", bread.value);
+   if(bread.value === "Italian Parmesan" || bread.value === "Wheat"){
+     document.querySelector('#price').innerText = '4.50';
+   } else if (bread.value === 'Sourdough'){
+     document.querySelector('#price').innerText = '5.50';
+   }else if (bread.value === 'White'){
+       document.querySelector('#price').innerText = '3.50';
+     }else if (bread.value === 'Mini-Banana Bread' || bread.value === 'Mini-Pumpkin Bread'){
+       document.querySelector('#price').innerText = '3.25';
+     }
+ }
+
+ function cakeChoice(){
+   button.setAttribute("data-item-custom1-value", bread.value);
+   if(bread.value === 'Carrot Layered' || bread.value === 'Coconut Layered' || bread.value === 'German Chocolate Layered' || bread.value === "Italian Cream Layered"){
+     document.querySelector('#price').innerText = "11.25";
+   } else if(bread.value === '8x8 Chocolate Cake'){
+     document.querySelector('#price').innerText = "4.25";
+   } else{
+     document.querySelector('#price').innerText = "3.75";
+   }
+ }
+
  function bakedChoice(){
    button.setAttribute("data-item-custom1-value", bread.value);
+ }
+
+ function pieChoice(){
+   if(bread.value === 'Pecan'){
+     document.querySelector('#price').innerText = "12.99";
+   }else{
+     document.querySelector('#price').innerText = "10.99";
+   }
+   button.setAttribute("data-item-custom1-value", bread.value);
+ }
+
+ function cakeSize(){
+   button.setAttribute("data-item-custom2-value", cakes.value);
+   if(cakes.value === "whole"){
+     document.querySelector('#price').innerText = 19.99;
+   }
+  else{
+   document.querySelector('#price').innerText = 11.25;
+   }
  }
 
 

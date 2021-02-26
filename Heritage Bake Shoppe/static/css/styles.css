@@ -24,8 +24,9 @@ footer{
 footer h4{
   color: var(--secondary);
   margin-top: 56px;
-  font-size: 18px;
+  font-size: 16px;
   margin-block-end: 14px;
+  letter-spacing: 1.6px;
 }
 footer p, footer a{
   font-size: 12px;
@@ -83,7 +84,7 @@ header {
 }
 
 html{
-  scroll-behavior: smooth;
+
 }
 
 hr{
@@ -135,6 +136,7 @@ label{
 
 li{
     font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 1.4px;
 }
 
 nav {
@@ -158,6 +160,7 @@ p {
   font-size: 15px;
   color: var(--secondary);
   line-height: 22px;
+  opacity: 0.8;
 }
 
 section{
@@ -196,6 +199,10 @@ textarea:focus, textarea:focus, select:focus{
 
 ul {
   list-style-type: none;
+}
+
+footer p{
+  opacity: 1;
 }
 
 #d-meat{
@@ -309,6 +316,7 @@ ul {
     justify-content: center;
     width: 80vw;
     transition: 0.3s;
+    letter-spacing: 1.4px;
     border: none;
 }
 .btn-main:hover{
@@ -327,6 +335,7 @@ ul {
   justify-content: center;
   width: 80vw;
   transition: 0.3s;
+  letter-spacing: 1.4px;
 }
 .btn-tan:hover{
   background-color: white;
@@ -345,6 +354,7 @@ ul {
     justify-content: center;
     width: 235px;
     transition: 0.3s;
+    letter-spacing: 1.4px;
 }
 .btn-white:hover{
   opacity:0.5;
@@ -362,8 +372,9 @@ ul {
     margin: 32px 0 48px;
     display: flex;
     justify-content: center;
-    width: 235px;
+    width: 215px;
     transition: 0.3s;
+    letter-spacing: 1.4px;
 }
 
 .btn-footer:hover{
@@ -387,8 +398,19 @@ ul {
   width: 32px;
 }
 
+.cart-parent{
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  transition: 0.3s;
+}
+
 .cart-word{
   display: none;
+  transition: 0.3s;
+
+}
+.cart-parent:hover{
+  opacity: 0.5;
 }
 
 .checkbox{
@@ -491,7 +513,7 @@ margin: 0 10px 25px 5px;
   height: 167px;
   position: relative;
   top: 76px;
-  right: -140px;
+  right: -120px;
   z-index: 2;
 }
 
@@ -535,7 +557,7 @@ margin: 0 10px 25px 5px;
 
 .line1{
   width: 32px;
-  height: 2px;
+  height: 1px;
   background-color: var(--secondary);
   margin: 30px 0 0 25px;
 }
@@ -547,7 +569,7 @@ margin: 0 10px 25px 5px;
 
 .line2{
   width: 32px;
-  height: 2px;
+  height: 1px;
   background-color: var(--secondary);
   margin: 8px 0 0 25px;
 }
@@ -558,7 +580,7 @@ margin: 0 10px 25px 5px;
 
 .line3{
   width: 32px;
-  height: 2px;
+  height: 1px;
   background-color: var(--secondary);
   margin: 8px 0 0 25px;
 }
@@ -582,6 +604,7 @@ margin: 0 10px 25px 5px;
   font-family: 'Space Grotesk', sans-serif;
   padding: 15px 20px;
   text-decoration: none;
+  letter-spacing: 1.4px;
 }
 
 .meats, .cheeses{
@@ -610,6 +633,13 @@ margin: 0 10px 25px 5px;
   color: var(--tertiary);
   font-family: 'Space Grotesk', sans-serif;
   padding: 15px 20px;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  transition: 0.3s;
+
+}
+.menu-item:hover{
+  opacity: 0.5;
 }
 
 .menu > ul {
@@ -631,6 +661,7 @@ margin: 0 10px 25px 5px;
   top: 85px;
   display: none;
   z-index: 10;
+  transition: 0.3s;
 }
 
 .mobile-menu hr{
@@ -650,8 +681,10 @@ margin: 0 10px 25px 5px;
 .m-menu{
   text-decoration: none;
   margin: 48px auto;
-  width: 230px;
-  font-size: 24px;
+  width: 210px;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  font-weight: bold;
 }
 
 .p-button{
@@ -672,6 +705,7 @@ margin: 0 10px 25px 5px;
   border-radius: 6px;
   border: 1px solid #640D14;
   display: none;
+  z-index: 10;
 }
 
 
@@ -707,6 +741,7 @@ margin: 0 10px 25px 5px;
   font-size: 18px;
   font-weight: 600;
   color: var(--quaternary);
+  letter-spacing: -0.18px;
 }
 
 .p-accent{
@@ -718,6 +753,7 @@ margin: 0 10px 25px 5px;
   position: absolute;
   top: 85px;
   left: 170px;
+  display: none;
 }
 
 .p-cat{
@@ -951,6 +987,20 @@ margin: 0 10px 25px 5px;
   margin: 8px 0;
 }
 
+@media only screen and (max-width: 325px){
+  .hero-img{
+    right: -60px;
+  }
+
+  .hero-accent{
+    left: 60vw;
+  }
+
+  .hero-bg{
+    width: 60vw;
+  }
+}
+
 @media only screen and (min-width: 481px){
 
 
@@ -984,6 +1034,10 @@ margin: 0 10px 25px 5px;
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
     grid-column-gap: 30px;
+  }
+
+  .prod-cat p{
+    max-width: 480px;
   }
   .prod-image>div{
     width: 32vw;
@@ -1050,11 +1104,11 @@ margin: 0 10px 25px 5px;
  }
 
  p{
-   font-size: 18px;
+   font-size: 14px;
  }
 
  a{
-   font-size: 18px;
+   font-size: 14px;
  }
 
   footer{
@@ -1217,9 +1271,17 @@ margin: 0 10px 25px 5px;
     min-height: 380px;
   }
 
+  .col{
+    grid-template-columns: 1fr;
+  }
+
   .sandwiches img{
     max-width: 400px;
     margin-top: 20px;
+  }
+
+  .sandwiches h2, .sandw-do h2{
+    font-size: 40px;
   }
 
   .sandwiches>div{
@@ -1285,7 +1347,7 @@ h4{
  }
 
  p {
-   font-size: 20px;
+   font-size: 16px;
  }
 
   nav>ul{
@@ -1334,6 +1396,11 @@ h4{
 
   .cta-text{
     margin-top: 70px;
+  }
+
+  .face{
+    height: 100px;
+    width: 112px;
   }
 
   .hamburger{
@@ -1404,6 +1471,7 @@ h4{
     height:74px;
     left: 350px;
     top: 130px;
+
   }
 
   .p-cat-line{
@@ -1415,6 +1483,7 @@ h4{
   .p-page{
     grid-column-gap: 120px;
     max-width: 1200px;
+    min-height: 700px;
   }
 
   .prod-cat{
@@ -1627,6 +1696,11 @@ h4{
     max-width: 450px;
   }
 
+  .face{
+    width: 144px;
+    height: 120px;
+  }
+
   .heading-accent{
     height: 70px;
     width: 60px;
@@ -1676,4 +1750,26 @@ h4{
     padding: 60px 170px;
   }
 
+}
+
+@media only screen and (min-width: 1930px){
+
+  .cta{
+    max-height: 880px;
+  }
+  .hero-bg{
+    height: 1220px;
+  }
+
+  .hero-text{
+    top: 480px;
+    left: 380px;
+
+  }
+
+  .hero-img{
+    left: 22vw;
+    height: 440px;
+    top: 470px;
+  }
 }

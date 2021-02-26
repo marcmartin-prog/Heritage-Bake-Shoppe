@@ -23,12 +23,14 @@ description: "Get the taste of home-made bread without the work. Choose the styl
   </div>
   <div class="product-options">
     <p>Keep yourself stocked up. If you're needing more than a loaf or two, order in advance and select the date needed at checkout. We'll have it ready for you by then.  </p>
-    <select class="" id="bread" name="bread" onchange="breadChoice(this.value)">
+    <select class="" id="bread" name="bread" onchange="loafChoice(this.value)">
       <option value="select-bread" disabled selected hidden>CHOOSE YOUR STYLE</option>
       <option value="White">White</option>
       <option value="Wheat">Wheat</option>
       <option value="Sourdough">Sourdough</option>
       <option value="Italian Parmesan">Italian Parmesan</option>
+      <option value="Mini-Banana Bread">Mini Loaf - Banana Bread</option>
+      <option value="Mini-Pumpkin Bread">Mini Loaf - Pumpkin Bread</option>
     </select>
     <label for="quantity">HOW MANY LOAVES? </label>
     <input type="number" id="quantity" value="1" name='quantity' onchange="quantity(this.value)">
@@ -37,18 +39,18 @@ description: "Get the taste of home-made bread without the work. Choose the styl
     <div class="prod-button">
       <div class="price">
         <span>$</span>
-        <span id="price">3.99</span>
+        <span id="price">3.50</span>
         <p>Per Loaf</p>
       </div>
       <button type="button" name="add-to-cart" class="btn-main snipcart-add-item" id="add-to-cart"
       data-item-id="Fresh Bread"
-      data-item-price="3.99"
+      data-item-price="3.25"
       data-item-url="/products/baked-goods/fresh-bread"
       data-item-description="Freshly Baked Loaf of Bread"
       data-item-image="/images/bread.jpg"
       data-item-name="Freshly Baked Bread"
       data-item-custom1-name="Bread"
-      data-item-custom1-options="White | Wheat | Sourdough | Italian Parmesan"
+      data-item-custom1-options="White [+0.50] | Wheat [+1.25] | Sourdough  [+2.25] | Italian Parmesan [+1.25] | Mini-Banana Bread | Mini-Pumpkin Bread"
       data-item-custom1-value="White"
       data-item-quantity="1"
       data-item-custom2-name = " Date Needed By:               Month:"

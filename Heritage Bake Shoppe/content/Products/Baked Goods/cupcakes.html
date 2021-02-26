@@ -22,34 +22,36 @@ description: "From chocolate chip, to coconut topped, we have lots of fresh cupc
     <p>From chocolate chip to coconut topped, choose your favorite style of deliciousness!</p>
   </div>
   <div class="product-options">
-    <p>Online ordering is by the dozen. Choose your style, or select an assortment, and we'll do the choosing for you.</p>
+    <p>Cupcakes sold by the half dozen. Choose your style or choose assortment and we'll get you some of our favorites!</p>
     <select class="" id="bread" name="bread" onchange="breadChoice(this.value)">
       <option value="select-bread" disabled selected hidden>CHOOSE YOUR STYLE</option>
       <option value="Assortment">Assortment</option>
-      <option value="Wheat">Wheat</option>
-      <option value="Sourdough">Sourdough</option>
-      <option value="Italian Parmesan">Italian Parmesan</option>
+      <option value="Chocolate With Chocolate Icing">Chocolate With Chocolate Icing</option>
+      <option value="Chocolate With White Icing">Chocolate With White Icing</option>
+      <option value="Coconut">Coconut</option>
+      <option value="Red Velvet">Red Velvet</option>
+      <option value="Vanilla">Vanilla</option>
     </select>
-    <label for="quantity">HOW MANY DOZEN? </label>
+    <label for="quantity">HOW MANY HALF DOZEN? </label>
     <input type="number" id="quantity" value="1" name='quantity' onchange="quantity(this.value)">
 
     <hr class="p-page-hr">
     <div class="prod-button">
       <div class="price">
         <span>$</span>
-        <span id="price">12.99</span>
+        <span id="price">4.50</span>
         <p>Per Dozen</p>
       </div>
       <button type="button" name="add-to-cart" class="btn-main snipcart-add-item" id="add-to-cart"
-      data-item-id="Fresh Bread"
-      data-item-price="3.99"
-      data-item-url="/products/baked-goods/fresh-bread"
-      data-item-description="Freshly Baked Loaf of Bread"
-      data-item-image="/images/bread.jpg"
-      data-item-name="Freshly Baked Bread"
-      data-item-custom1-name="Bread"
-      data-item-custom1-options="White | Wheat | Sourdough | Italian Parmesan"
-      data-item-custom1-value="White"
+      data-item-id="Fresh Cupcakes"
+      data-item-price="4.50"
+      data-item-url="/products/baked-goods/cupcakes"
+      data-item-description="Freshly Baked Cupcakes"
+      data-item-image="/images/cupcake.jpg"
+      data-item-name="Freshly Baked Cupcakes"
+      data-item-custom1-name="Flavor"
+      data-item-custom1-options="Chocolate With Chocolate Icing | Chocolate With White Icing | Coconut | Red Velvet | Vanilla"
+      data-item-custom1-value="Chocolate With Chocolate Icing"
       data-item-quantity="1"
       data-item-custom2-name = " Date Needed By:               Month:"
       data-item-custom2-options = "January | February | March | April | May | June | July | August | September | October | November | December"
