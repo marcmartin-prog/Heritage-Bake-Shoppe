@@ -1261,7 +1261,7 @@ margin: 0 10px 25px 5px;
   }
 
   .sandw-do{
-    margin: 60px 0;
+    margin: 20px 0 60px;
   }
 
 
@@ -1504,6 +1504,10 @@ h4{
     right: 110px;
   }
 
+      .prod-hero{
+        margin-top: 60px;
+      }
+
 
   .prod-image>div{
     width: 400px;
@@ -1513,13 +1517,10 @@ h4{
     top: 180px;
   }
 
-  .prod-hero{
-    margin-top: 60px;
-  }
 
   .prod-accent{
-    width: 80px;
-    height: 120px;
+    width: 60px;
+    height: 80px;
   }
 
   .products{
@@ -1615,6 +1616,11 @@ h4{
   .p-page{
     grid-template-columns: 1fr 1fr;
   }
+
+    .prod-accent{
+      width: 80px;
+      height: 120px;
+    }
 
   .prod-hero>h1, .prod-hero>.breadcrumb, .prod-hero>.options{
     position: relative;
