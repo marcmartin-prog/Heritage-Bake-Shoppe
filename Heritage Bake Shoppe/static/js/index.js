@@ -1,11 +1,14 @@
 //jshint esversion: 6
 
 function privacyPolicy () {
- if (localStorage.getItem("hasCodeRunBefore") === null) {
-     document.querySelector('#privacy').style.display="block";
-     localStorage.setItem("hasCodeRunBefore", true);
- }
+  setTimeout(function(){
+    if (localStorage.getItem("hasCodeRunBefore") === null) {
+        document.querySelector('#privacy').style.display="block";
+        localStorage.setItem("hasCodeRunBefore", true);
+       }
+  }, 5000);
 }
+
 
 
 function accept(){
@@ -430,6 +433,8 @@ function traySize(){
     document.querySelector('#tray-price').innerText = "34.99";
   } else if(tray.value.includes("Large", 0)){
     document.querySelector('#tray-price').innerText = "49.99";
+  } else if(tray.value.includes("Small", 0)){
+    document.querySelector('#tray-price').innerText = "15.99";
   }
 }
 
