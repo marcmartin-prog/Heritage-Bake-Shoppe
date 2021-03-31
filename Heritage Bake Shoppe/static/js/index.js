@@ -434,7 +434,7 @@ function traySize(){
   } else if(tray.value.includes("Large", 0)){
     document.querySelector('#tray-price').innerText = "49.99";
   } else if(tray.value.includes("Small", 0)){
-    document.querySelector('#tray-price').innerText = "15.99";
+    document.querySelector('#tray-price').innerText = "24.99";
   }
 }
 
@@ -448,3 +448,5 @@ function moveLeft(){
 function moveRight(){
   document.getElementById('review-parent').scrollRight -=1000;
 }
+
+//API Testing code
