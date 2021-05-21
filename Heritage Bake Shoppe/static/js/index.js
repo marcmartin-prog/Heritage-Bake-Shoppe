@@ -390,21 +390,32 @@ function dCheese(){
 function tCheese(){
    if(document.querySelector('#triple-cheese').checked){
     document.querySelector('#t-cheese').style.display ="inline-block";
-    priceAdd();
+    priceAddTCheese();
    }else{
     document.querySelector('#t-cheese').style.display = "none";
-    priceMinus();
+    priceMinusTCheese();
   }
 }
 
 
 
 function priceAdd(){
-  updatedPrice = updatedPrice + 1.00;
+  updatedPrice = updatedPrice + 2.00;
   document.querySelector('#price').innerText = updatedPrice;
 }
 
 function priceMinus(){
+  updatedPrice = updatedPrice - 2.00;
+  document.querySelector('#price').innerText = updatedPrice;
+}
+
+
+function priceAddTCheese(){
+  updatedPrice = updatedPrice + 1.00;
+  document.querySelector('#price').innerText = updatedPrice;
+}
+
+function priceMinusTCheese(){
   updatedPrice = updatedPrice - 1.00;
   document.querySelector('#price').innerText = updatedPrice;
 }
