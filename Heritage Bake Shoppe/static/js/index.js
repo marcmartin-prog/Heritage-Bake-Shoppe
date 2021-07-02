@@ -20,6 +20,14 @@ privacyPolicy();
 
 
 
+// start over code
+
+function startOver(){
+ location.reload(false);
+  return false;
+}
+
+
 /*mobile menu code*/
 
 function noScroll(){
